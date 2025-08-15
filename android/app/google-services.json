@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "849022837454",
+    "project_id": "office-walkathon-app",
+    "storage_bucket": "office-walkathon-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849022837454:android:099180f4c9af2b97a6269f",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAor6Q5tEQWKG5EBO2_yKEVQRDlAlWV3hE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -7,7 +7,7 @@ import 'package:myapp/services/sheets_service.dart';
 
 class ParticipantScreen extends StatefulWidget {
   final String name;
-  const ParticipantScreen({Key? key, required this.name}) : super(key: key);
+  const ParticipantScreen({super.key, required this.name});
 
   @override
   _ParticipantScreenState createState() => _ParticipantScreenState();

@@ -38,6 +38,6 @@ class SheetsService {
         await sheet.values.insertRow(1, ['Name', 'Steps', 'Timestamp']);
     }
 
-    await sheet.values.appendRow([name, steps, DateTime.now().toIso8_601String()]);
+    await sheet.values.appendRow([name, steps, DateTime.now().toIso8601String()]);
   }
 }

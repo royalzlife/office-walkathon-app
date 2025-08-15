@@ -4,7 +4,7 @@ import 'package:myapp/screens/participant_screen.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class RoleSelectionScreen extends StatefulWidget {
-  const RoleSelectionScreen({Key? key}) : super(key: key);
+  const RoleSelectionScreen({super.key});
 
   @override
   _RoleSelectionScreenState createState() => _RoleSelectionScreenState();
