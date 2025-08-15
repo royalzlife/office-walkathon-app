@@ -3,11 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:pedometer/pedometer.dart';
 import 'package:provider/provider.dart';
 import 'package:myapp/services/firebase_service.dart';
-import 'package:myapp/services/sheets_service.dart';
 
 class ParticipantScreen extends StatefulWidget {
   final String name;
-  const ParticipantScreen({super.key, required this.name});
+  const ParticipantScreen({Key? key, required this.name}) : super(key: key);
 
   @override
   _ParticipantScreenState createState() => _ParticipantScreenState();
@@ -16,7 +15,6 @@ class ParticipantScreen extends StatefulWidget {
 class _ParticipantScreenState extends State<ParticipantScreen> {
   late StreamSubscription<StepCount> _stepCountSubscription;
   late StreamSubscription _competitionStateSubscription;
-  final SheetsService _sheetsService = SheetsService();
 
   int _initialSteps = 0;
   int _currentSteps = 0;
@@ -94,7 +92,7 @@ class _ParticipantScreenState extends State<ParticipantScreen> {
     if (mounted) {
       if (_competitionStatus != 'Finished!') {
         _stepCountSubscription.cancel();
-        _sheetsService.uploadToSheet(widget.name, _currentSteps);
+        // The results are already saved in Firebase.
         setState(() {
           _competitionStatus = 'Finished!';
         });

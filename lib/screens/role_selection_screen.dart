@@ -4,7 +4,7 @@ import 'package:myapp/screens/participant_screen.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class RoleSelectionScreen extends StatefulWidget {
-  const RoleSelectionScreen({super.key});
+  const RoleSelectionScreen({Key? key}) : super(key: key);
 
   @override
   _RoleSelectionScreenState createState() => _RoleSelectionScreenState();
@@ -22,7 +22,6 @@ class _RoleSelectionScreenState extends State<RoleSelectionScreen> {
   }
 
   Future<void> _requestPermissions() async {
-    // Request permission to access motion and activity data for step counting.
     await Permission.activityRecognition.request();
   }
 
@@ -48,7 +47,6 @@ class _RoleSelectionScreenState extends State<RoleSelectionScreen> {
           actions: [
             TextButton(
               onPressed: () {
-                // For this project, the password is hardcoded.
                 if (_adminPasswordController.text == 'admin123') {
                   Navigator.of(context).pop();
                   Navigator.of(context).push(MaterialPageRoute(

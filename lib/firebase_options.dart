@@ -65,4 +65,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'office-walkathon-app.firebasestorage.app',
     iosBundleId: 'com.example.myapp',
   );
+
 }

@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:myapp/services/firebase_service.dart';
 
 class AdminScreen extends StatelessWidget {
-  const AdminScreen({super.key});
+  const AdminScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

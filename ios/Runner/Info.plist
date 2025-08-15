@@ -46,6 +46,6 @@
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>NSMotionUsageDescription</key>
-<string>This app needs to count your steps for the walkathon.</string>
+	<string>This app needs to count your steps for the walkathon.</string>
 </dict>
 </plist>
